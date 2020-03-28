@@ -19,28 +19,28 @@ void _doNothing(){}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // drawer: Drawer(
-      //     child: ListView(
-      //       children: <Widget>[
-      //         DrawerHeader(
-      //           decoration: BoxDecoration(
-      //           image: DecorationImage(
-      //             image: AssetImage('assets/bg.png'),
-      //             fit: BoxFit.cover,
-      //         ),
-      //         ),
-      //         child: Image(
-      //            alignment: Alignment.center,
-      //             fit:  BoxFit.contain,
-      //             image: AssetImage('assets/main.gif'),
-      //         ),
-      //           ),
-      //             ListTitle(Icons.person,'Profile', _doNothing ),
-      //             ListTitle(Icons.notifications,'Notification', _doNothing ),
-      //             ListTitle(Icons.settings,'Setting', _doNothing ),
-      //       ],
-      //     ),
-      //   ),  
+      drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/bg.png'),
+                  fit: BoxFit.cover,
+              ),
+              ),
+              child: Image(
+                 alignment: Alignment.center,
+                  fit:  BoxFit.contain,
+                  image: AssetImage('assets/main.gif'),
+              ),
+                ),
+                  ListTitle(Icons.person,'Profile', _doNothing ),
+                  ListTitle(Icons.notifications,'Notification', _doNothing ),
+                  ListTitle(Icons.settings,'Setting', _doNothing ),
+            ],
+          ),
+        ),  
       appBar: AppBar(   
         leading: IconButton(icon: Icon(Icons.settings), onPressed: _doNothing),   
         title: Text('Welcome Corona!'),      
